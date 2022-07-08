@@ -30,18 +30,13 @@ h6 {
 }
 
 .container {
-    width: 900px;
+    max-width: 900px;
     padding: 1rem;
-}
-
-.row {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: var(--lenght-md1);
 }
 
 .card {
     padding: 1rem;
+    margin-bottom: 1rem;
     background: var(--color-card);
     border-radius: 1rem;
     flex-grow: 1;
@@ -135,11 +130,9 @@ h6 {
     display: flex;
     justify-content: space-evenly;
     gap: 0.5rem;
-    width: 50%;
 }
 
 .card-headline {
-    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -172,7 +165,6 @@ h6 {
 
 .card-progress {
     padding: 1.5rem;
-    width: 25%;
     text-align: center;
 }
 
@@ -199,7 +191,6 @@ h6 {
 }
 
 .card-growth {
-    width: 50%;
     padding: 1.5rem;
     text-align: center;
 }
@@ -210,14 +201,8 @@ h6 {
 }
 
 .card-regions {
-    width: 25%;
     padding: 1.1rem;
     text-align: center;
-}
-
-.card-activity,
-.card-author {
-    width: 50%;
 }
 
 .timeline {
@@ -258,7 +243,7 @@ h6 {
     top: 22px;
     left: 4.5rem;
     width: 2px;
-    height: 100%;
+    height: calc(100% - 22px);
     background: var(--color-default);
 }
 
@@ -315,5 +300,39 @@ ul>li>img {
     .container {
         width: 800px;
         margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card-headline {
+        width: 25%;
+    }
+
+
+    .card-progress {
+        width: 25%;
+    }
+
+    .card-regions {
+        width: 25%;
+    }
+
+    .card-list {
+        width: 50%;
+    }
+
+
+    .card-growth {
+        width: 50%;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .card-activity,
+    .card-author {
+        width: 50%;
     }
 }
