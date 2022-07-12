@@ -1,0 +1,30 @@
+:root {
+    --color-background: #242424;
+    --color-text: #f9f9f9;
+    --color-card: #1b1b1b;
+    --color-label: #aaaaaa;
+    --color-primary: #44f6fd;
+    --color-accent: #fffffa;
+    --color-default: #363636;
+
+    --lenght-md1: 1rem;
+    --lenght-md2: 1.25rem;
+    --lenght-md3: 1.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1;
+}
