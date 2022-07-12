@@ -1,14 +1,22 @@
 .container {
-    max-width: 900px;
     padding: 1rem;
+    display: grid;
+    grid-gap: var(--lenght-md1);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "headline1 headline2"
+        "list list"
+        "growth growth"
+        "engagement engagement"
+        "regions regions"
+        "authors authors"
+        "activity activity";
 }
 
 .card {
     padding: 1rem;
-    margin-bottom: 1rem;
     background: var(--color-card);
     border-radius: 1rem;
-    flex-grow: 1;
 }
 
 .card.has-extra-padding {
@@ -96,6 +104,7 @@
 }
 
 .card-list {
+    grid-area: list;
     display: flex;
     justify-content: space-evenly;
     gap: 0.5rem;
@@ -106,6 +115,15 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.card-headline1 {
+    grid-area: headline1;
+}
+
+.card-headline2 {
+    grid-area: headline2;
+}
+
 
 .card-list-item {
     display: flex !important;
@@ -133,8 +151,17 @@
 }
 
 .card-progress {
+    grid-area: engagement;
     padding: 1.5rem;
     text-align: center;
+}
+
+.card-author {
+    grid-area: authors;
+}
+
+.card-activity {
+    grid-area: activity;
 }
 
 .card-progress-donut {
@@ -160,6 +187,7 @@
 }
 
 .card-growth {
+    grid-area: growth;
     padding: 1.5rem;
     text-align: center;
 }
@@ -170,6 +198,7 @@
 }
 
 .card-regions {
+    grid-area: regions;
     padding: 1.1rem;
     text-align: center;
 }
@@ -261,47 +290,184 @@ ul>li>img {
 .avatar-notes {
     color: var(--color-label);
     font-size: 0.875rem;
+    line-height: 1.4;
 }
 
-/* Tablet media queries */
+@keyframes hide {
+
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    75% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.preloader {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--color-background);
+    animation: hide 1s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 6px solid var(--color-default);
+    border-top-color: var(--color-primary);
+    animation: spin 1s infinite linear;
+}
+
+.dropdown-input {
+    position: absolute;
+    transform: scale(0);
+}
+
+.dropdown-label {
+    cursor: pointer;
+}
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    border-radius: var(--lenght-md1);
+    top: 2.5rem;
+    right: 0;
+    padding: var(--lenght-md1);
+    width: 10rem;
+    background: var(--color-background);
+    transform: translateY(1rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.dropdown-input:checked ~ .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    height: 2rem;
+    border: 0;
+    color: #f9f9f9;
+    border-radius: 2.5rem;
+    padding: 0 0.75rem;
+}
+
+.dropdown-menu-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+button {
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        grid-template-areas:
+            "headline1 headline2"
+            "list list"
+            "growth growth"
+            "engagement regions"
+            "authors authors"
+            "activity activity";
+    }
+}
 
 @media only screen and (min-width: 800px) {
     .container {
-        width: 800px;
+        max-width: 800px;
         margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "headline1 headline2 list list"
+            "engagement growth growth regions"
+            "authors authors activity activity";
     }
 
+    /* 
     .row {
         display: flex;
         gap: 1rem;
     }
+    */
 
+    /* 
     .card-headline {
         width: 25%;
-    }
+    } 
+    */
 
 
+    /*
     .card-progress {
         width: 25%;
     }
+    */
 
+    /*
     .card-regions {
         width: 25%;
     }
+    */
 
+    /* 
     .card-list {
         width: 50%;
-    }
+    } 
+    */
 
 
+    /*
     .card-growth {
         width: 50%;
         padding: 1.5rem;
         text-align: center;
     }
+    */
 
+    /*
     .card-activity,
     .card-author {
         width: 50%;
     }
+    */
 }

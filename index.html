@@ -33,258 +33,280 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="card card-headline">
+        <div class="preloader">
+            <div class="spinner">
+            </div>
+        </div>
+        <div class="card card-headline card-headline1">
+            <div>
+                <h4 class="card-h4">
+                    Followers
+                </h4>
+                <h2 class="card-h2">
+                    104k
+                </h2>
+            </div>
+            <span class="card-headline-icon uil uil-user">
+            </span>
+        </div>
+        <div class="card card-headline card-headline2">
+            <div>
+                <h4 class="card-h4">
+                    Likes
+                </h4>
+                <h2 class="card-h2">
+                    988k
+                </h2>
+            </div>
+            <span class="card-headline-icon uil uil-heart">
+            </span>
+        </div>
+        <div class="card card-list">
+            <div class="card-list-item">
+                <span class="card-list-badge primary"></span>
                 <div>
                     <h4 class="card-h4">
-                        Followers
+                        Saves
                     </h4>
                     <h2 class="card-h2">
-                        104k
+                        1.2M
                     </h2>
                 </div>
-                <span class="card-headline-icon uil uil-user">
-                </span>
             </div>
-            <div class="card card-headline">
+            <div class="card-list-item">
+                <span class="card-list-badge accent"></span>
+                <div>
+                    <h4 class="card-h4">
+                        Friends
+                    </h4>
+                    <h2 class="card-h2">
+                        556
+                    </h2>
+                </div>
+            </div>
+            <div class="card-list-item">
+                <span class="card-list-badge default"></span>
+                <div>
+                    <h4 class="card-h4">
+                        Reach
+                    </h4>
+                    <h2 class="card-h2">
+                        677k
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="card has-extra-padding card-progress">
+            <div>
+                <h3 class="card-h3">
+                    Engagement
+                </h3>
+                <h4 class="card-h4">
+                    Engagement Rate
+                </h4>
+                <h2 class="card-h2 has-bottom-margin">
+                    33%
+                </h2>
+            </div>
+            <div class="card-progress-donut"></div>
+        </div>
+        <div class="card has-extra-padding card-growth">
+            <h3 class="card-h3">
+                Growth per week
+            </h3>
+            <div class="card-growth-headlines">
                 <div>
                     <h4 class="card-h4">
                         Likes
                     </h4>
-                    <h2 class="card-h2">
-                        988k
+                    <h2 class="card-h2 has-bottom-margin">
+                        18.8k
                     </h2>
                 </div>
-                <span class="card-headline-icon uil uil-heart">
+                <div>
+                    <h4 class="card-h4">
+                        Followers
+                    </h4>
+                    <h2 class="card-h2 has-bottom-margin">
+                        2k
+                    </h2>
+                </div>
+                <div>
+                    <h4 class="card-h4">
+                        Saved post
+                    </h4>
+                    <h2 class="card-h2 has-bottom-margin">
+                        22.3k
+                    </h2>
+                </div>
+            </div>
+            <div class="card-bar-chart">
+                <div>
+                    <div class="card-bar-default" style="height:30px;"></div>
+                    <div class="card-bar-primary" style="height:20px;"></div>
+                </div>
+                <div>
+                    <div class="card-bar-default" style="height:50px;"></div>
+                    <div class="card-bar-primary" style="height:33px;"></div>
+                </div>
+                <div>
+                    <div class="card-bar-default" style="height:12px;"></div>
+                    <div class="card-bar-primary" style="height:89px;"></div>
+                </div>
+                <div>
+                    <div class="card-bar-default" style="height:30px;"></div>
+                    <div class="card-bar-primary" style="height:20px;"></div>
+                </div>
+                <div>
+                    <div class="card-bar-default" style="height:40px;"></div>
+                    <div class="card-bar-primary" style="height:50px;"></div>
+                </div>
+                <div>
+                    <div class="card-bar-default" style="height:32px;"></div>
+                    <div class="card-bar-primary" style="height:15px;"></div>
+                </div>
+                <div>
+                    <div class="card-bar-default" style="height:40px;"></div>
+                    <div class="card-bar-primary" style="height:80px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card has-extra-padding card-regions">
+            <h3 class="card-h3">
+                Growth
+            </h3>
+            <div>
+                <h4 class="card-h4">
+                    Last year vs current year
+                </h4>
+                <h2 class="card-h2 has-bottom-margin">
+                    72%
+                </h2>
+            </div>
+            <div class="card-bar-chart is-gauge-chart">
+                <div>
+                    <div class="card-bar-default" style="height:30px;"></div>
+                    <div class="card-bar-primary" style="height:70px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-author">
+            <header class="card-header">
+                <h3 class="card-h3 no-bottom-margin">
+                    Authors
+                </h3>
+                <div class="dropdown-wrapper">
+            <input 
+              type="checkbox" 
+              class="dropdown-input" 
+              id="dropdown-input" 
+            />
+            <label class="dropdown-label" for="dropdown-input">
+              <span class="card-header-icon uil uil-ellipsis-v"></span>
+            </label>
+            <div class="dropdown-menu">
+              <button class="dropdown-menu-button">
+                Refresh
+              </button>
+              <button class="dropdown-menu-button">
+                Edit
+              </button>
+              <button class="dropdown-menu-button">
+                Export
+              </button>
+              <button class="dropdown-menu-button has-divider">
+                Delete
+              </button>
+            </div>
+          </div>
+        </header>
+        <ul class="avatar-list">
+            <li>
+                <img class="avatar" src="./media/1.png" alt="User Profile Pic">
+                <span class="avatar-text-block">
+                    <span class="avatar-title">
+                        Eren Jaeger
+                    </span>
+                    <span class="avatar-notes">
+                        Founding Titan skilled in React.js and Vue.js.
+                    </span>
+                </span>
+            </li>
+            <li>
+                <img class="avatar" src="./media/2.png" alt="User Profile Pic">
+                <span class="avatar-text-block">
+                    <span class="avatar-title">
+                        Joe Harrison
+                    </span>
+                    <span class="avatar-notes">
+                        Copywriter with burning passion for cats.
+                    </span>
+                </span>
+            </li>
+            <li>
+                <img class="avatar" src="./media/3.png" alt="User Profile Pic">
+                <span class="avatar-text-block">
+                    <span class="avatar-title">
+                        Naomi Hunter
+                    </span>
+                    <span class="avatar-notes">
+                        A landmark for the historic quest to Shadow Moses.
+                    </span>
+                </span>
+            </li>
+            <li>
+                <img class="avatar" src="./media/4.png" alt="User Profile Pic">
+                <span class="avatar-text-block">
+                    <span class="avatar-title">
+                        Gellert Grildelwald
+                    </span>
+                    <span class="avatar-notes">
+                        A fairly complex figure in the wizarding world.
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="card card-activity">
+        <header class="card-header">
+            <h3 class="card-h3 no-bottom-margin">
+                Activity
+            </h3>
+            <span class=" card-header-icon uil uil-ellipsis-v"></span>
+        </header>
+        <div class="timeline">
+            <div class="timeline-row primary">
+                <span class="timeline-when">
+                    4:20pm
+                </span>
+                <span class="timeline-badge"></span>
+                <span class="timeline-text">
+                    Eren pushed some awesome CSS code to this master repository!
                 </span>
             </div>
-            <div class="card card-list">
-                <div class="card-list-item">
-                    <span class="card-list-badge primary"></span>
-                    <div>
-                        <h4 class="card-h4">
-                            Saves
-                        </h4>
-                        <h2 class="card-h2">
-                            1.2M
-                        </h2>
-                    </div>
-                </div>
-                <div class="card-list-item">
-                    <span class="card-list-badge accent"></span>
-                    <div>
-                        <h4 class="card-h4">
-                            Friends
-                        </h4>
-                        <h2 class="card-h2">
-                            556
-                        </h2>
-                    </div>
-                </div>
-                <div class="card-list-item">
-                    <span class="card-list-badge default"></span>
-                    <div>
-                        <h4 class="card-h4">
-                            Reach
-                        </h4>
-                        <h2 class="card-h2">
-                            677k
-                        </h2>
-                    </div>
-                </div>
+            <div class="timeline-row">
+                <span class="timeline-when">
+                    11:23am
+                </span>
+                <span class="timeline-badge"></span>
+                <span class="timeline-text">
+                    Naomi painted her toenails with black nail polish while Grindelwald filmed a video to upload
+                    on OnlyFans.
+                </span>
+            </div>
+            <div class="timeline-row">
+                <span class="timeline-when">
+                    5:23am
+                </span>
+                <span class="timeline-badge"></span>
+                <span class="timeline-text">
+                    Joe worked hard to create this tutorial while I sit here writing crap after copying his code
+                    and design.
+                </span>
             </div>
         </div>
-        <div class="row">
-            <div class="card has-extra-padding card-progress">
-                <div>
-                    <h3 class="card-h3">
-                        Engagement
-                    </h3>
-                    <h4 class="card-h4">
-                        Engagement Rate
-                    </h4>
-                    <h2 class="card-h2 has-bottom-margin">
-                        33%
-                    </h2>
-                </div>
-                <div class="card-progress-donut"></div>
-            </div>
-            <div class="card has-extra-padding card-growth">
-                <h3 class="card-h3">
-                    Growth per week
-                </h3>
-                <div class="card-growth-headlines">
-                    <div>
-                        <h4 class="card-h4">
-                            Likes
-                        </h4>
-                        <h2 class="card-h2 has-bottom-margin">
-                            18.8k
-                        </h2>
-                    </div>
-                    <div>
-                        <h4 class="card-h4">
-                            Followers
-                        </h4>
-                        <h2 class="card-h2 has-bottom-margin">
-                            2k
-                        </h2>
-                    </div>
-                    <div>
-                        <h4 class="card-h4">
-                            Saved post
-                        </h4>
-                        <h2 class="card-h2 has-bottom-margin">
-                            22.3k
-                        </h2>
-                    </div>
-                </div>
-                <div class="card-bar-chart">
-                    <div>
-                        <div class="card-bar-default" style="height:30px;"></div>
-                        <div class="card-bar-primary" style="height:20px;"></div>
-                    </div>
-                    <div>
-                        <div class="card-bar-default" style="height:50px;"></div>
-                        <div class="card-bar-primary" style="height:33px;"></div>
-                    </div>
-                    <div>
-                        <div class="card-bar-default" style="height:12px;"></div>
-                        <div class="card-bar-primary" style="height:89px;"></div>
-                    </div>
-                    <div>
-                        <div class="card-bar-default" style="height:30px;"></div>
-                        <div class="card-bar-primary" style="height:20px;"></div>
-                    </div>
-                    <div>
-                        <div class="card-bar-default" style="height:40px;"></div>
-                        <div class="card-bar-primary" style="height:50px;"></div>
-                    </div>
-                    <div>
-                        <div class="card-bar-default" style="height:32px;"></div>
-                        <div class="card-bar-primary" style="height:15px;"></div>
-                    </div>
-                    <div>
-                        <div class="card-bar-default" style="height:40px;"></div>
-                        <div class="card-bar-primary" style="height:80px;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="card has-extra-padding card-regions">
-                <h3 class="card-h3">
-                    Growth
-                </h3>
-                <div>
-                    <h4 class="card-h4">
-                        Last year vs current year
-                    </h4>
-                    <h2 class="card-h2 has-bottom-margin">
-                        72%
-                    </h2>
-                </div>
-                <div class="card-bar-chart is-gauge-chart">
-                    <div>
-                        <div class="card-bar-default" style="height:30px;"></div>
-                        <div class="card-bar-primary" style="height:70px;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card card-author">
-                <header class="card-header">
-                    <h3 class="card-h3 no-bottom-margin">
-                        Authors
-                    </h3>
-                    <span class=" card-header-icon uil uil-ellipsis-v"></span>
-                </header>
-                <ul class="avatar-list">
-                    <li>
-                        <img class="avatar" src="./media/1.png" alt="User Profile Pic">
-                        <span class="avatar-text-block">
-                            <span class="avatar-title">
-                                Eren Jaeger
-                            </span>
-                            <span class="avatar-notes">
-                                Founding Titan skilled in React.js and Vue.js.
-                            </span>
-                        </span>
-                    </li>
-                    <li>
-                        <img class="avatar" src="./media/2.png" alt="User Profile Pic">
-                        <span class="avatar-text-block">
-                            <span class="avatar-title">
-                                Joe Harrison
-                            </span>
-                            <span class="avatar-notes">
-                                Copywriter with burning passion for cats.
-                            </span>
-                        </span>
-                    </li>
-                    <li>
-                        <img class="avatar" src="./media/3.png" alt="User Profile Pic">
-                        <span class="avatar-text-block">
-                            <span class="avatar-title">
-                                Naomi Hunter
-                            </span>
-                            <span class="avatar-notes">
-                                A landmark for the historic quest to Shadow Moses.
-                            </span>
-                        </span>
-                    </li>
-                    <li>
-                        <img class="avatar" src="./media/4.png" alt="User Profile Pic">
-                        <span class="avatar-text-block">
-                            <span class="avatar-title">
-                                Gellert Grildelwald
-                            </span>
-                            <span class="avatar-notes">
-                                A fairly complex figure in the wizarding world.
-                            </span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="card card-activity">
-                <header class="card-header">
-                    <h3 class="card-h3 no-bottom-margin">
-                        Activity
-                    </h3>
-                    <span class=" card-header-icon uil uil-ellipsis-v"></span>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-row primary">
-                        <span class="timeline-when">
-                            4:20pm
-                        </span>
-                        <span class="timeline-badge"></span>
-                        <span class="timeline-text">
-                            Eren pushed some awesome CSS code to this master repository!
-                        </span>
-                    </div>
-                    <div class="timeline-row">
-                        <span class="timeline-when">
-                            11:23am
-                        </span>
-                        <span class="timeline-badge"></span>
-                        <span class="timeline-text">
-                            Naomi painted her toenails with black nail polish while Grindelwald filmed a video to upload
-                            on OnlyFans.
-                        </span>
-                    </div>
-                    <div class="timeline-row">
-                        <span class="timeline-when">
-                            5:23am
-                        </span>
-                        <span class="timeline-badge"></span>
-                        <span class="timeline-text">
-                            Joe worked hard to create this tutorial while I sit here writing crap after copying his code
-                            and design.
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
 
 </body>
