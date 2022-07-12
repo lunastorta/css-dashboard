@@ -248,6 +248,7 @@
 .timeline-text {
     color: var(--color-label);
     font-size: 0.875rem;
+    line-height: 1.4;
 }
 
 .timeline-row.primary .timeline-text {
